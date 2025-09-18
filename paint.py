@@ -50,12 +50,38 @@ def circle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    """Se acomodo el forward para que recorriera la distancia en x al principio, luego la distancia en y, 
+    y así para formar los 4 lados del rectangulo"""
+    forward(end.x - start.x)
+    left(90)
+    forward(end.y - start.y)
+    left(90)
+    forward(end.x - start.x)
+    left(90)
+    forward(end.y - start.y)
+    left(90)
+
+    end_fill()
+
 
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    """Se estableció el rango a 3 para que solo tuviera 3 lados el triángulo, y se cambió a 120° para que se tuviera la forma triangular"""
+    for count in range(3):
+        forward(end.x - start.x)
+        left(120)
+
+    end_fill()
+
 
 
 def tap(x, y):
