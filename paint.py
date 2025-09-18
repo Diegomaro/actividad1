@@ -21,14 +21,12 @@ def line(start, end):
     down()
     goto(end.x, end.y)
 
-
 def square(start, end):
     """Draw square from start to end."""
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
-
     for count in range(4):
         forward(end.x - start.x)
         left(90)
@@ -38,7 +36,15 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    length = (end.x - start.x)/9
+    for count in range(36):
+        forward(length)
+        left(10)
+    end_fill()
 
 
 def rectangle(start, end):
