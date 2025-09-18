@@ -40,6 +40,7 @@ def circle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
+    """ se ajusto el aumento de largo de cada lado para que este mas cerca del tamaño del solicitado con el puntero. """
     length = (end.x - start.x)/9
     for count in range(36):
         forward(length)
