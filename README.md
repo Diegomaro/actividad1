@@ -1,5 +1,6 @@
 El codigo consiste en un programa paint. Capaz de cambiar de color del pincel,
 hacer lineas, cuadrados y deshacer la ultima pieza. 
+   'u' = undo
    'K' = negro
    'W' = blanco
    'G' = verde
