@@ -56,7 +56,7 @@ def rectangle(start, end):
     down()
     begin_fill()
     """Se acomodo el forward para que recorriera la distancia en x al principio, luego la distancia en y, 
-    y así para formar los 4 lados del rectangulo"""
+    y así para formar los 4 lados del rectángulo"""
     forward(end.x - start.x)
     left(90)
     forward(end.y - start.y)
@@ -76,7 +76,8 @@ def triangle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-    """Se estableció el rango a 3 para que solo tuviera 3 lados el triángulo, y se cambió a 120° para que se tuviera la forma triangular"""
+    """Se cambió el rango a 3 para establecer el número de lados del tríangulo 
+y se cambió a 120° para que se tuviera forma triangular"""
     for count in range(3):
         forward(end.x - start.x)
         left(120)
