@@ -9,10 +9,6 @@ hacer lineas, cuadrados y deshacer la ultima pieza.
    's' = cuadrado
 
 Con nuestras modificaciones, se agregaron funciones al juego base de freegame.
-Agregan el color amarillo y tres funciones. 
-Las funciones son: hacer circulos, rectangulos y triangulos.
-Para utilizar las modificaciones, utilizar los siguientes caracteres:
-   'Y' = amarillo
-   'c' = circulo
-   'r' = rectangulo
-   't' = triangulo
+Primera modficación: Se agregaron el color amarillo y la función circulo.
+Segunda modificación: ...
+Tercera modificación: Se agregaron comentarios al código

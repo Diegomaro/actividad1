@@ -40,8 +40,9 @@ def circle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-    """ se ajusto el aumento de largo de cada lado para que este mas cerca del tamaño del solicitado con el puntero. """
+    """ Se ajustó el tamaño total del círculo para que esté más cerca del tamaño solicitado con el puntero. """
     length = (end.x - start.x)/9
+    """ Se agregó el ciclo para dibujar el circulo completo con 36 lados, girando 10 angulos despues de cada trazo"""
     for count in range(36):
         forward(length)
         left(10)
@@ -112,6 +113,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+""" Se agregó el color amarillo que utiliza la tecla 'Y' """
 onkey(lambda: color('yellow'), 'Y')
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
