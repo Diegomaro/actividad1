@@ -12,7 +12,6 @@ hacer lineas, cuadrados y deshacer la ultima pieza.
 Con nuestras modificaciones, se agregaron funciones al juego base de freegame.
 Primera modficación: Se agregaron el color amarillo y la función circulo.
 Segunda modificación: Se agregaron las funciones triángulo y rectángulo.
-Tercera modificación: Se agregaron comentarios al código.
 
 Para utilizar las nuevas funciones, se utilizan las siguientes teclas:
    'Y' = amarillo 
